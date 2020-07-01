@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: example3
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: example3
+  template:
+    metadata:
+      labels:
+        app: example3
+    spec:
+      containers:
+        - name: example3
+          image: itetechmadacr.azurecr.io/example3:latest
+          ports:
+            - containerPort: 80

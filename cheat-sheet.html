@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Itera Azure</title>
+        <style>
+</style>
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+        
+        <style>
+.task-list-item { list-style-type: none; } .task-list-item-checkbox { margin-left: -20px; vertical-align: middle; }
+</style>
+        <style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        
+        
+        
+    </head>
+    <body class="vscode-light">
+        <h1 id="itera-azure">Itera Azure</h1>
+<h2 id="login">Login</h2>
+<pre><code class="language-shell"><div>az login
+</div></code></pre>
+<h2 id="set-mad-platform-as-current-subscription">Set MAD Platform as current subscription</h2>
+<pre><code class="language-shell"><div>az account set --subscription 'MAD Platform'
+</div></code></pre>
+<h2 id="set-up-docker-to-be-able-to-push-to-repository-acr">Set up docker to be able to push to repository (ACR)</h2>
+<pre><code class="language-shell"><div>az acr login -n itetechmadacr
+</div></code></pre>
+<h2 id="set-up-kubectl-to-be-able-to-talk-to-kubernetes-aks">Set up kubectl to be able to talk to kubernetes (AKS)</h2>
+<pre><code class="language-shell"><div>az aks get-credentials -g ite-tech-aks-rg -n ite-tech-mad-aks
+</div></code></pre>
+<h1 id="installation-links">Installation links</h1>
+<ul>
+<li><a href="https://hub.docker.com/editions/community/docker-ce-desktop-windows">Docker desktop for windows</a></li>
+<li><a href="https://hub.docker.com/editions/community/docker-ce-desktop-windows">Docker desktop for mac</a></li>
+<li>Docker for linux - use package manager or snap</li>
+<li><a href="https://docs.microsoft.com/en-us/cli/azure/install-azure-cli">Azure CLI</a></li>
+<li><a href="https://kubernetes.io/docs/tasks/tools/install-kubectl/">Kubectl</a></li>
+</ul>
+<h1 id="docker-documentation">Docker documentation</h1>
+<ul>
+<li><a href="https://docs.docker.com/engine/reference/builder/">Dockerfile reference</a></li>
+<li><a href="https://docs.docker.com/engine/reference/commandline/build/">Docker build</a></li>
+<li><a href="https://docs.docker.com/engine/reference/commandline/run/">Docker run</a></li>
+</ul>
+<h1 id="kubectl-documentation">Kubectl documentation</h1>
+<ul>
+<li><a href="https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands">Kubectl</a></li>
+</ul>
+<h1 id="utilities">Utilities</h1>
+<ul>
+<li><a href="https://github.com/derailed/k9s">k9s</a></li>
+</ul>
+
+    </body>
+    </html>
